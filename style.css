@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid red; */
+}
+
+body {
+    font-family: sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em 5rem;
+
+    img {
+        height: 3rem;
+    }
+
+}
+
+
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    gap: 3em;
+
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    a:hover {
+        color: #ff0000;
+    }
+
+}
+
+.hero {
+    background-color: #ffdc04;
+    text-align: center;
+    height: 80vh;
+    padding: 0 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* line-height: 4rem; */
+
+    h1 {
+        font-size: 4em;
+        font-weight: bolder;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    p {
+        padding-top: 3em;
+        padding-bottom: 3em;
+        font-weight: lighter;
+    }
+
+    a {
+        background-color: #ff0000;
+        color: #ffffff;
+        padding: 5px 85px;
+        border-radius: 10px;
+        font-size: 2rem;
+        font-weight: bold;
+        text-decoration: none;
+    }
+}
+
+.my-services {
+    padding: 0 5em;
+    height: 70vh;
+
+    h2 {
+        font-size: 2em;
+        text-align: center;
+        padding: 2em 0;
+    }
+
+    .service-wrap {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        column-gap: 10px;
+
+    }
+
+    .service {
+        padding: 1.6em 0;
+    }
+}
+
+.about-me {
+    background-color: #ffdc04;
+    padding: 2em 5em;
+    height: 70vh;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    align-items: center;
+
+    h2 {
+        font-size: 2em;
+    }
+
+    .rectangle {
+        background-color: #ff0000;
+        padding: 5px 2px;
+        width: 40%;
+    }
+
+    p {
+        padding-top: 2em;
+        padding-bottom: 2em;
+    }
+
+
+    a {
+        background-color: #ff0000;
+        color: #ffffff;
+        padding: 10px 30px;
+        border-radius: 10px;
+        font-size: 1.5em;
+        text-decoration: none;
+    }
+
+    .right-part {
+        text-align: center;
+    }
+
+    img {
+        height: 300px;
+    }
+
+}
+
+footer {
+    background-color: #010101;
+    height: auto;
+
+    p {
+        color: #ffffff;
+        text-align: center;
+    }
+}
+
+
+@media screen and (width <=450px) {
+    header {
+        display: flex;
+        justify-content: center;
+        padding: 0.6em 0;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .hero {
+
+        padding: inherit;
+
+        h1 {
+            font-size: 2.3rem;
+        }
+
+        p {
+            margin: 0 10px;
+        }
+    }
+
+    .my-services {
+        padding: 0 20px;
+        height: 70vh;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .rectangle {
+            background-color: #ff0000;
+            padding: 5px 2px;
+            margin: 0 35%;
+        }
+
+        h2 {
+            font-size: 2em;
+            text-align: center;
+            padding: 0 0;
+        }
+
+        .service-wrap {
+            display: inline;
+
+        }
+
+        .service {
+            padding: 1em 0;
+        }
+    }
+
+    .about-me {
+        padding: 0 20px;
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: justify;
+
+        h2 {
+            font-size: 2em;
+        }
+
+        .rectangle {
+            background-color: #ff0000;
+            padding: 5px 2px;
+            width: 40%;
+        }
+
+        p {
+            padding-top: 2em;
+            padding-bottom: 2em;
+        }
+
+
+        a {
+            background-color: #ff0000;
+            color: #ffffff;
+            padding: 10px 30px;
+            border-radius: 10px;
+            font-size: 1.5em;
+            text-decoration: none;
+        }
+
+        img {
+            display: none;
+        }
+
+    }
+
+
+}
