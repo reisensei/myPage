@@ -18,7 +18,7 @@
         <div class="logo-container">
             <img src="images/logo.png" alt="Reystation Logo">
         </div>
-        <nav>
+        <nav class="hide-mobile">
             <ul>
                 <li><a href="">Home</a></li>
                 <li><a href="">About</a></li>
@@ -40,25 +40,40 @@
         <h2>My Services</h2>
         <div class="rectangle"></div>
         <div class="service-wrap">
-            <div class="service">
-                <h3>Desain Grafis</h3>
-                <p>Desain backdrop acara, seminar, cover buku</p>
+            <div class="service-sub-wrap">
+                <img src="icons/path582.svg" alt="design">
+                <div class="service">
+                    <h3>Desain Grafis</h3>
+                    <p>Desain backdrop acara, seminar, cover buku</p>
+                </div>
             </div>
-            <div class="service">
-                <h3>Multimedia</h3>
-                <p>Take video, edit video, edit foto</p>
+            <div class="service-sub-wrap">
+                <img src="icons/multimedia.svg" alt="multimedia">
+                <div class="service">
+                    <h3>Multimedia</h3>
+                    <p>Take video, edit video, edit foto</p>
+                </div>
             </div>
-            <div class="service">
-                <h3>Layout</h3>
-                <p>Layout buku, company profile</p>
+            <div class="service-sub-wrap">
+                <img src="icons/layouticon.svg" alt="booklayout">
+                <div class="service">
+                    <h3>Layout</h3>
+                    <p>Layout buku, company profile</p>
+                </div>
             </div>
-            <div class="service">
-                <h3>Les Bahasa Jepang</h3>
-                <p>Pribadi, kerja</p>
+            <div class="service-sub-wrap">
+                <img src="icons/hiragana.svg" alt="hiragana">
+                <div class="service">
+                    <h3>Les Bahasa Jepang</h3>
+                    <p>Pribadi, kerja</p>
+                </div>
             </div>
-            <div class="service">
-                <h3>Pembuatan Website</h3>
-                <p>Pribadi, bisnis, sekolah, portfolio</p>
+            <div class="service-sub-wrap">
+                <img src="icons/websitebuat.svg" alt="website">
+                <div class="service">
+                    <h3>Pembuatan Website</h3>
+                    <p>Pribadi, bisnis, sekolah, portfolio</p>
+                </div>
             </div>
         </div>
     </section>
@@ -77,16 +92,33 @@
                 bisa.” Karena saya percaya, setiap orang kadang butuh bantuan kecil maupun besar dalam urusan teknologi
                 — dan saya siap membantu!
             </p>
-            <a href="#">More!</a>
+            <a href="#">Call Me!</a>
         </div>
         <div class="right-part">
             <img src="images/frame0000.png" alt="gambar">
         </div>
     </section>
 
+    <section class="contact-form">
+        <h2>Formulir Kontak</h2>
+        <form action="#">
+            <input type="text" name="name" id="name" placeholder="Nama">
+            <input type="email" name="email" id="email" placeholder="Email">
+            <select name="bantuan" id="bantuan">
+                <option value="dsngrfs">Desain Grafis</option>
+                <option value="nihongo">Les Bahasa Jepang</option>
+                <option value="media">Multimedia</option>
+                <option value="web">Pembuatan Website</option>
+                <option value="bklayout">Layout</option>
+            </select>
+            <textarea name="message" id="message" placeholder="Message"></textarea>
+            <input type="submit" name="submit" id="input-submit">
+        </form>
+    </section>
+
     <footer>
         <div>
-            <p>Reystation</p>
+            <p>Reystation 2025</p>
         </div>
     </footer>
 </body>

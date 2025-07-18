@@ -4,6 +4,11 @@
     /* border: 1px solid red; */
 }
 
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
 h1,
 h2,
 h3 {
@@ -104,6 +109,16 @@ nav ul {
 
     }
 
+    .service-sub-wrap {
+        display: flex;
+        align-items: center;
+        gap: 1em;
+
+        img {
+            max-height: 2em;
+        }
+    }
+
     .service {
         padding: 1.6em 0;
     }
@@ -152,6 +167,59 @@ nav ul {
 
 }
 
+
+.contact-form {
+
+    height: 70vh;
+    display: grid;
+    grid-template-columns: 40% 40%;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5vw;
+
+    h2 {
+        padding-top: 2em;
+    }
+
+    form {
+
+        input,
+        textarea,
+        select {
+            background-color: #eef0da;
+            border: 0;
+            outline: 0;
+            padding: 1em;
+            display: block;
+            width: 100%;
+            margin-top: 1em;
+            border-radius: 8px;
+            resize: none;
+        }
+
+        &:focus {
+            box-shadow: 0 0px 2px !important;
+        }
+    }
+
+    #input-submit {
+        color: #ffffff;
+        background-color: #ff0000;
+        cursor: pointer;
+    }
+
+    textarea {
+        height: 126px;
+    }
+
+
+    .rectangle {
+        background-color: #ff0000;
+        padding: 5px 2px;
+        width: 20vw;
+    }
+}
+
 footer {
     background-color: #010101;
     height: auto;
@@ -160,6 +228,10 @@ footer {
         color: #ffffff;
         text-align: center;
     }
+}
+
+.spacer {
+    padding-bottom: 2em;
 }
 
 
@@ -257,10 +329,59 @@ footer {
 
     }
 
+    .contact-form {
+
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2vw;
+
+    h2 {
+        padding-top: 2em;
+    }
+
+    form {
+
+        input,
+        textarea,
+        select {
+            background-color: #eef0da;
+            border: 0;
+            outline: 0;
+            padding: 1em;
+            display: block;
+            width: 100%;
+            margin-top: 1em;
+            border-radius: 8px;
+            resize: none;
+        }
+    }
+
+    #input-submit {
+        color: #ffffff;
+        background-color: #ff0000;
+        cursor: pointer;
+    }
+
+    textarea {
+        height: 126px;
+    }
+}
+
 
 }
 
-@media all and (min-width: 768px) and (max-width: 1024px)  {
+
+@media all and (max-width: 768px) {
+    .hide-mobile {
+        display: none;
+    }
+
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
 
     header {
 
@@ -286,18 +407,20 @@ footer {
         height: 60vh;
     }
 
-    .my-services{
+    .my-services {
         height: auto;
 
-        .service-wrap  {
+        .service-wrap {
             padding-bottom: 2em;
         }
     }
 
-    .about-me{
+    .about-me {
         grid-template-columns: 50% 50%;
         height: 45vh;
     }
 }
 
-@media all and (min-width: 480px) and (max-width: 768px){}
+@media all and (min-width: 480px) and (max-width: 768px) {
+
+}
