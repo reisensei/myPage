@@ -167,8 +167,18 @@ nav ul {
 
 }
 
+.yt-playlist {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 
 .contact-form {
+
+    background-color: #ffdc04;
 
     height: 70vh;
     display: grid;
@@ -327,6 +337,12 @@ footer {
             display: none;
         }
 
+    }
+
+    .yt-playlist{
+        iframe {
+           max-width: fit-content;
+        }
     }
 
     .contact-form {
